@@ -179,6 +179,7 @@ int main()
       case 9:
          
            printf("exit\n");
+           return 0;
 
         break;       
 
