@@ -28,13 +28,13 @@ int main()
      while (1)
      {
       printf("1. user rejistration\n");
-      printf("2. View Bus Details\n");
-      printf("3. Book Ticket\n");
-      printf("4. Fare Calculation\n");
-      printf("5. Booking Receipt\n");
-      printf("6. Cancel Ticket\n");
-      printf("7. Modify Ticket\n");
-      printf("8. userlogin\n");
+      printf("2. userlogin\n");
+      printf("3. View Bus Details\n");
+      printf("4. Book Ticket\n");
+      printf("5. Fare Calculation\n");
+      printf("6. Booking Receipt\n");
+      printf("7. Cancel Ticket\n");
+      printf("8. Modify Ticket\n");
       printf("9. Exit\n");
 
       printf("Enter Your Choice: ");
@@ -61,6 +61,22 @@ int main()
       break;
 
       case 2:
+                
+
+          printf("\n=====user login=====\n");
+
+          printf("enter userlogin name");
+          scanf(" %[^\n]s",userloginname);
+
+          printf("enter userlogin pasword");
+          scanf("%s",userloginpassword);
+
+          printf("\nlogin  Successful!\n");
+
+
+      break; 
+
+      case 3:
             printf("\n===== BUS DETAILS =====\n");
             printf("Bus Name    : %s\n", busname);
             printf("Bus Number  : %d\n", busNumber);
@@ -69,7 +85,7 @@ int main()
        break;
 
 
-        case 3:
+        case 4:
             if (booked == 1)
             {
                 printf("Ticket already booked.\n");
@@ -93,7 +109,7 @@ int main()
             }
             break;
 
-        case 4:
+        case 5:
         if (booked)
             {
                 printf("\n===== FARE =====\n");
@@ -106,7 +122,7 @@ int main()
             break;
 
 
-        case 5:
+        case 6:
             if (booked)
             {
                 printf("\n========= BOOKING RECEIPT =========\n");
@@ -128,7 +144,7 @@ int main()
                    }
             break;
 
-            case 6:
+            case 7:
             if (booked)
             {
                 booked = 0;
@@ -142,7 +158,7 @@ int main()
             break;
 
 
-            case 7:
+            case 8:
             if (booked)
             {
                 printf("Current Seat: %d\n", seatnumber);
@@ -158,21 +174,7 @@ int main()
 
          break; 
 
-         case 8:
-                
-
-          printf("\n=====user login=====\n");
-
-          printf("enter userlogin name");
-          scanf(" %[^\n]s",userloginname);
-
-          printf("enter userlogin pasword");
-          scanf("%s",userloginpassword);
-
-          printf("\nlogin  Successful!\n");
-
-
-      break;  
+     
       
       case 9:
          
